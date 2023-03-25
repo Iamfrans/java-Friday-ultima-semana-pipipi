@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package friday;
-
+import java.util.Scanner;
 /**
  *
  * @author Alumno
@@ -13,10 +13,17 @@ public class Friday {
     /**
      * @param args the command line arguments
      */
-        public static void main(String[] args) {
-        System.out.println("   J    A     V     V    A   ");
-        System.out.println("   J   A A     V   V    A A  ");
-        System.out.println("J  J  AAAAA     V V    AAAAA ");
-        System.out.println(" JJ  A     A     V    A     A");
-    }
-}
+      public static void main(String[] args) {
+          Scanner dato = new Scanner (System.in);
+         System.out.println("Ingrese el primer valor");
+         int n1 = dato.nextInt();
+         System.out.println("Ingrese el segundo valor");
+         int n2 = dato.nextInt();
+         for (int i = n1; i <= n2; i++) {
+             if(i%2 !=0){
+                System.out.println(i);
+            }
+        }
+      }
+    
+}   
